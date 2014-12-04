@@ -66,7 +66,16 @@ class ReCAPTCHAPlugin extends WPPlugin
         } else {
             add_action('register_form', array(&$this,
                 'show_recaptcha_in_registration'));
+            add_action('bp_before_registration_submit_buttons', array(&$this,
+                'show_recaptcha_in_registration'));
+            add_action('bp_signup_validate', array(&$this,
+                'check_recaptcha_generic'), 0);
         }
+
+        add_action('lostpassword_form', array(&$this,
+                'show_recaptcha_in_registration'));
+	add_action('lostpassword_post', array(&$this,
+                'check_recaptcha_generic'), 0);
 
         add_action('comment_form', array(&$this, 'show_recaptcha_in_comments'));
 
@@ -327,6 +336,24 @@ JS;
             }
         }
         return $comment_data;
+    }
+
+    function check_recaptcha_generic() {
+        global $user_ID;
+        if ($this->_reCaptchaLib == null) {
+            $this->_reCaptchaLib = new ReCaptcha($this->options['secret']);
+        }
+        $response = $this->_reCaptchaLib->verifyResponse(
+            $_SERVER['REMOTE_ADDR'],
+            $_POST['g-recaptcha-response']);
+
+        if (!$response->success) {
+            $this->_saved_error = $response->error;
+	    $error = __('Please check the CAPTCHA code. It\'s not correct.', 'g-recaptcha');
+	    wp_die("<strong>$error</strong>");
+	    return false;
+        }
+        return true;
     }
 
     function relative_redirect($location, $comment) {
