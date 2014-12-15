@@ -1,10 +1,15 @@
 Introduction
 ------------
 This just takes wp-recaptcha and adds a few callbacks to make it work with
-Buddypress. The patch to do this is **VERY simple**.
+Buddypress.
+
+You only need this plugin if you use Buddypress with wordpress and want a
+recaptcha at the registration page.
 
 Future
 ------
+The patch to do this on top of wp-recaptcha is **VERY simple**.
+
 As google is the owner of wp-recaptcha, it is expected to be always up to date.
 And as the patch to add Buddypress is very simple, updating the wp-recaptcha
 plugin version this is based on is expected to be very simple.
