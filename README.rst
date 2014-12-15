@@ -14,11 +14,12 @@ As google is the owner of wp-recaptcha, it is expected to be always up to date.
 And as the patch to add Buddypress is very simple, updating the wp-recaptcha
 plugin version this is based on is expected to be very simple.
 
-Hopefully, this plugin won't be needed in the future as a better way to handle
-this issue with registration callbacks for plugins will be found. Some
-discussion about it here [#]_.
+Luckily, this plugin won't be needed in the future as a better way to handle
+this issue with registration callbacks for plugins will be found. I started some
+discussion about it here [#]_ and here [#]_.
 
 .. [#] https://wordpress.org/support/topic/easy-way-to-add-recaptcha-to-custom-actions-like-buddypress-actions?replies=1#post-6296863
+.. [#] https://buddypress.trac.wordpress.org/ticket/6068
 
 Version of wp-recaptcha it is based
 -----------------------------------
