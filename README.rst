@@ -11,4 +11,8 @@ discussion about it here [#]_.
 
 Currently is based on wp-recaptcha 4.1.
 
+You can see this plugin in a site using buddypress here [#]_. If you go to "join",
+you will see the recaptcha there.
+
 .. [#] https://wordpress.org/support/topic/easy-way-to-add-recaptcha-to-custom-actions-like-buddypress-actions?replies=1#post-6296863
+.. [#] http://community.phplist.com
