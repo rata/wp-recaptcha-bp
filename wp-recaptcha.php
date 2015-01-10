@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: WP-reCAPTCHA
-Description: Integrates reCAPTCHA anti-spam solutions with wordpress
+Plugin Name: WP-reCAPTCHA-bp
+Description: Integrates reCAPTCHA anti-spam solutions with wordpress sites using BuddyPress
 Version: 4.1
-Email: support@recaptcha.net
+Email: rodrigo@phplist.com
 */
 
 // this is the 'driver' file that instantiates the objects and registers every hook

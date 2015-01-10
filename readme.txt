@@ -1,13 +1,16 @@
 === Plugin Name ===
-Contributors: recaptchanet
-Tags: comments, registration, recaptcha, antispam, captcha
+Contributors: elrata_
+Tags: comments, registration, recaptcha, antispam, captcha, buddypress
 Requires at least: 2.7
 Tested up to: 2.9.1
 Stable tag: 4.1
 
-Integrates reCAPTCHA anti-spam methods with WordPress including comment and registration spam protection.
+Integrates reCAPTCHA anti-spam methods with WordPress sites using BuddyPress plugin, including comment and registration spam protection.
 
 == Description ==
+
+This is a small modification of the wp-recaptcha plugin to make it work with
+BuddyPress.
 
 What is reCAPTCHA?
 

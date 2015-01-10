@@ -162,9 +162,9 @@ class ReCAPTCHAPlugin extends WPPlugin
 
     function create_error_notice($message, $anchor = '') {
         $options_url = admin_url(
-            'options-general.php?page=wp-recaptcha/recaptcha.php') . $anchor;
+            'options-general.php?page=wp-recaptcha-bp/recaptcha.php') . $anchor;
         $error_message = sprintf(__($message .
-            ' <a href="%s" title="WP-reCAPTCHA Options">Fix this</a>',
+            ' <a href="%s" title="WP-reCAPTCHA-bp Options">Fix this</a>',
             'recaptcha'), $options_url);
         echo '<div class="error"><p><strong>' . $error_message .
             '</strong></p></div>';
@@ -403,7 +403,7 @@ JS;
             $settings_title = __('Settings for this Plugin', 'recaptcha');
             $settings = __('Settings', 'recaptcha');
             $settings_link =
-               '<a href="options-general.php?page=wp-recaptcha/recaptcha.php"' .
+               '<a href="options-general.php?page=wp-recaptcha-bp/recaptcha.php"' .
                ' title="' . $settings_title . '">' . $settings . '</a>';
            array_unshift($links, $settings_link);
         }
@@ -415,9 +415,9 @@ JS;
         // add the options page
         if ($this->environment == Environment::WordPressMU &&
             $this->is_authority())
-            add_submenu_page('wpmu-admin.php', 'WP-reCAPTCHA', 'WP-reCAPTCHA',
+            add_submenu_page('wpmu-admin.php', 'WP-reCAPTCHA-bp', 'WP-reCAPTCHA-bp',
                 'manage_options', __FILE__, array(&$this, 'show_settings_page'));
-            add_options_page('WP-reCAPTCHA', 'WP-reCAPTCHA', 'manage_options',
+            add_options_page('WP-reCAPTCHA-bp', 'WP-reCAPTCHA-bp', 'manage_options',
                  __FILE__, array(&$this, 'show_settings_page'));
         }
         // store the xhtml in a separate file and use include on it
