@@ -10,7 +10,13 @@ Integrates reCAPTCHA anti-spam methods with WordPress sites using BuddyPress plu
 == Description ==
 
 This is a small modification of the wp-recaptcha plugin to make it work with
-BuddyPress.
+BuddyPress. Currently uses recaptcha v2 (the last one).
+
+You only need this plugin if you use Buddypress with wordpress and want a
+recaptcha at the registration page.
+
+It is always rebased on top of wp-recaptcha. See
+https://github.com/rata/wp-recaptcha-bp for more info
 
 What is reCAPTCHA?
 
