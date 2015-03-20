@@ -129,6 +129,12 @@ Because we ask users to enter two words instead of one, we can increase the secu
 
 CAPTCHAs offer great protection against abuse from automated programs. While it might be the case that some spammers have started using porn sites to attack CAPTCHAs (although there is no recorded evidence of this), the amount of damage this can inflict is tiny (so tiny that we haven't even seen this happen!). Whereas it is trivial to write a bot that abuses an unprotected site millions of times a day, redirecting CAPTCHAs to be solved by humans viewing pornography would only allow spammers to abuse systems a few thousand times per day. The economics of this attack just don't add up: every time a porn site shows a CAPTCHA before a porn image, they risk losing a customer to another site that doesn't do this.
 
+== Upgrade Notice ==
+
+= 4.1 =
+Just dumb text to force wp.org update the fixes to the readme. No change to the
+code
+
 == Screenshots ==
 
 1. The reCAPTCHA Settings
